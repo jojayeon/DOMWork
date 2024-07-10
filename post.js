@@ -20,7 +20,7 @@ const server = http.createServer((req,res) => {
       return;
     }
   }else if (req.method === "POST") {
-    if(req.url === "submit") {
+    if(req.url === "/submit") {
       let body = "";
       res.on("data",(chunk)=>{
         body += chunk.tostring();
